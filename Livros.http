@@ -1,0 +1,17 @@
+@baseUrl = http://localhost:3000
+@contentType = application/json
+
+GET {{baseUrl}}/livros
+Accept: {{contentType}}
+
+@id = 1
+GET {{baseUrl}}/livros/{{id}}
+Accept: {{contentType}}
+
+POST {{baseUrl}}/livros
+Content-Type: {{contentType}}
+
+{
+  "dsTitulo": "Dom Casmurro",
+  "dsAutor": "Machado de Assis"
+}
